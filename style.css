@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fdfa;
+    color: #333;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .logo h1 { font-size: 24px; }
+header .logo p { font-size: 14px; font-weight: 300; }
+
+.carrinho-btn {
+    background-color: #fff;
+    color: #2e7d32;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.carrinho-btn:hover { background-color: #e8f5e9; }
+
+/* Seção de Filtros */
+.filtros-section {
+    padding: 30px 50px 10px;
+    text-align: center;
+}
+
+.filtros-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.botoes-filtro {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botoes-filtro button {
+    background-color: transparent;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.botoes-filtro button:hover {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+.produto-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto-card:hover { transform: translateY(-5px); }
+.produto-card img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+.produto-card h3 { font-size: 18px; margin-bottom: 10px; }
+.produto-card .categoria { font-size: 12px; color: #666; text-transform: uppercase; display: block; margin-bottom: 10px; }
+.produto-card .descricao { font-size: 14px; color: #555; margin-bottom: 15px; flex-grow: 1; }
+.produto-card .preco { font-size: 20px; font-weight: bold; color: #2e7d32; margin-bottom: 15px; }
+
+.produto-card button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.produto-card button:hover { background-color: #388e3c; }
+
+/* Sidebar do Carrinho */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar.aberta { right: 0; }
+
+.cabecalho-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#btn-fechar-carrinho {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+#btn-fechar-carrinho:hover { color: #333; }
+#itens-carrinho { flex-grow: 1; overflow-y: auto; }
+
+.total-carrinho {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.total-carrinho p { font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+
+#btn-finalizar-compra {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#btn-finalizar-compra:hover { background-color: #1b5e20; }
+#btn-finalizar-compra:disabled { background-color: #999; cursor: not-allowed; }
