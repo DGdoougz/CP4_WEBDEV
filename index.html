@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend - E-commerce Sustentável</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>EcoTrend</h1>
+            <p>Seu estilo de vida consciente e sustentável</p>
+        </div>
+        
+        <button id="btn-abrir-carrinho" class="carrinho-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="contador-carrinho">0</span>
+        </button>
+    </header>
+
+    <section class="filtros-section">
+        <h2>Filtrar por Categoria:</h2>
+        <div class="botoes-filtro">
+            <button onclick="filtrarProdutos('Todas')">Todas</button>
+            <button onclick="filtrarProdutos('Roupas e acessórios sustentáveis')">Roupas e Acessórios</button>
+            <button onclick="filtrarProdutos('Produtos de beleza e cuidados pessoais naturais')">Beleza Natural</button>
+            <button onclick="filtrarProdutos('Itens para casa sustentáveis')">Casa Sustentável</button>
+            <button onclick="filtrarProdutos('Tecnologia verde')">Tecnologia Verde</button>
+        </div>
+    </section>
+
+    <main>
+        <div id="produtos-container" class="produtos-grid">
+            </div>
+    </main>
+
+    <aside id="sidebar-carrinho" class="sidebar">
+        <div class="cabecalho-carrinho">
+            <h2>Seu Carrinho</h2>
+            <button id="btn-fechar-carrinho"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div id="itens-carrinho">
+            </div>
+        
+        <div class="total-carrinho">
+            <p>Total: <span id="valor-total">R$ 0,00</span></p>
+            <button id="btn-finalizar-compra">Finalizar Compra</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
