@@ -142,7 +142,7 @@ function processarPagamento() {
 
 btnFinalizarCompra.addEventListener('click', async () => {
     if (carrinho.length === 0) {
-        alert("Seu carrinho está vazio. Adicione alguns produtos ecológicos primeiro!");
+        alert("Seu carrinho está vazio. Adicione algum produto ecológico primeiro!");
         return;
     }
 
