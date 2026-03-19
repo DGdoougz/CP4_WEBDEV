@@ -134,7 +134,7 @@ function processarPagamento() {
             if (sucesso) {
                 resolve("Compra finalizada com sucesso! A natureza agradece sua escolha na EcoTrend.");
             } else {
-                reject("Ops! Houve um problema ao processar seu pagamento. Tente novamente.");
+                reject("Opss! Houve um problema ao processar seu pagamento. Tente novamente.");
             }
         }, 2000); // 2 segundos de loading
     });
