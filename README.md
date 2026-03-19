@@ -58,8 +58,8 @@ Embora o projeto esteja disponível online no link acima, caso queira rodar loca
 - [Wenderson Da Silva Santos ] - RM: [567847]
 - [Douglas Taveira Vilella Roberto] - RM: [567846]
 - [Guilherme Pereira De Souza] - RM: [567487]
-- [Eduardo Navarro  ] - RM: [568095]
-- [Victor De Souza Zoncoler] - RM: [568234]
+- [Eduardo Navarro] - RM: [568095]
+- [Victor De Souza Zocoler] - RM: [568234]
 
 ---
 *Projeto desenvolvido para fins acadêmicos.*
