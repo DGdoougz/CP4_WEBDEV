@@ -142,7 +142,7 @@ function processarPagamento() {
 
 btnFinalizarCompra.addEventListener('click', async () => {
     if (carrinho.length === 0) {
-        alert("Seu carrinho está vazio. Adicione algum produto ecológico primeiro!");
+        alert("Seu carrinho está vazio. Explore nossos produtos sustentáveis e faça escolhas conscientes 🌱");
         return;
     }
 
